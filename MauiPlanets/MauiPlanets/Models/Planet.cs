@@ -9,6 +9,7 @@
         public Color AccentColorStart { get; set; }
         public Color AccentColorEnd { get; set; }
         public List<string> Images { get; set; }
+        public bool IsFeatured { get; set; }
 
         public Brush Background 
         { 

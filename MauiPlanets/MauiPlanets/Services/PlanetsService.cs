@@ -58,7 +58,7 @@ namespace MauiPlanets.Services
                 Name = "Mars",
                 Subtitle = "The red beauty",
                 HeroImage = "mars.png",
-                Description = "No planet has sparked the imaginations of humans as much as Mars. It may be the reddish color of Mars, or the fact that it can often be easily seen in the night sky, that has caused people to wonder about this close neighbor of ours. Tales of “Martians” invading Earth have been around for well over fifty years. But is it likely that any kind of life really does exist on Mars?",
+                Description = "No planet has sparked the imaginations of humans as much as Mars. It may be the reddish color of Mars, or the fact that it can often be easily seen in the night sky, that has caused people to wonder about this close neighbor of ours. Tales of 'Martians' invading Earth have been around for well over fifty years. But is it likely that any kind of life really does exist on Mars?",
                 AccentColorStart = Color.FromHex("#a23036"),
                 AccentColorEnd = Color.FromHex("#eb3333"),
                 Images = new()
@@ -139,22 +139,20 @@ namespace MauiPlanets.Services
                 AccentColorEnd = Color.FromHex("#FF0000"),
                 Images = new()
                 {
-                    "https://i.natgeofe.com/n/b103fff5-6a84-4d19-b65e-5856998816c3/PIA19952_2x3.jpg"
+                    "https://i.natgeofe.com/n/b103a01d-2fb8-4d0d-85f0-3d44c0f06a22/pluto-high-resolution.jpg",
+                    "https://upload.wikimedia.org/wikipedia/commons/2/2b/Nh-pluto-in-true-color_2x_JPEG-edit-frame.jpg",
+                    "https://solarsystem.nasa.gov/system/feature_items/images/147_Hubble_Venus_Clouds-800x600.jpg"
                 }
             }
         };
 
+        public static List<Planet> GetAllPlanets()
+        {
+            return planets;
+        }
         public static List<Planet> GetFeaturedPlanets()
         {
-            var random = new Random();
-            var randomizePlanets = planets
-                .OrderBy(item => random.Next());
-
-            return randomizePlanets
-                .Take(2)
-                .ToList();
+            return planets.Where(planet => planet.IsFeatured).ToList();
         }
-
-        public static List<Planet> GetAllPlanets() => planets;
     }
 }

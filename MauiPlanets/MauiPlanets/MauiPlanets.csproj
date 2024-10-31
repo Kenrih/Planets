@@ -57,6 +57,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\ceres.svg" />
+	  <None Remove="Resources\Images\eris.svg" />
+	  <None Remove="Resources\Images\haumea.svg" />
+	  <None Remove="Resources\Images\makemake.svg" />
 	  <None Remove="Resources\Images\pluto.svg" />
 	</ItemGroup>
 
