@@ -12,7 +12,6 @@ namespace MauiPlanets
     {
         const int WindowWidth = 540;
         const int WindowHeight = 900;
-        
 
         public App()
         {
@@ -31,7 +30,7 @@ namespace MauiPlanets
 #endif
             });
 
-            MainPage = new StartPage();
+            MainPage = new NavigationPage(new StartPage());
         }
     }
 }

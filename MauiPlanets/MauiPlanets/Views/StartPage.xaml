@@ -101,6 +101,61 @@
             WidthRequest="200"
             HeightRequest="200"/>
 
+        <Image 
+            x:Name="imgPluto"
+            Opacity="0"
+            Source="pluto.png"
+            VerticalOptions="Start"
+            HorizontalOptions="End"
+            TranslationX="120"
+            TranslationY="200"
+            WidthRequest="75"
+            HeightRequest="75"/>
+
+        <Image 
+            x:Name="imgMakemake"
+            Opacity="0"
+            Source="makemake.png"
+            VerticalOptions="Center"
+            HorizontalOptions="End"
+            TranslationX="80"
+            TranslationY="-100"
+            WidthRequest="70"
+            HeightRequest="70"/>
+
+        <Image 
+            x:Name="imgEris"
+            Opacity="0"
+            Source="eris.png"
+            VerticalOptions="Center"
+            HorizontalOptions="Start"
+            TranslationX="-150"
+            TranslationY="-100"
+            WidthRequest="80"
+            HeightRequest="80"/>
+
+        <Image 
+            x:Name="imgCeres"
+            Opacity="0"
+            Source="ceres.png"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            TranslationX="50"
+            TranslationY="150"
+            WidthRequest="70"
+            HeightRequest="70"/>
+
+        <Image 
+            x:Name="imgHaumea"
+            Opacity="0"
+            Source="haumea.png"
+            VerticalOptions="Start"
+            HorizontalOptions="End"
+            TranslationX="150"
+            TranslationY="180"
+            WidthRequest="80"
+            HeightRequest="80"/>
+
         <!--Intro Box-->
         <Border
             x:Name="imgIntro"
