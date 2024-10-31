@@ -159,6 +159,51 @@ namespace MauiPlanets.Services
                 }
             }
         };
+        new ()
+            {
+                Name = "Pluto",
+                Subtitle = "Pluto was once a planet of our solar system.",
+                HeroImage = "pluto.png",
+                Description = "Pluto was once our solar system's ninth planet, but has " +
+                           "been reclassified as a dwarf planet. It's located in the Kuiper Belt.",
+                AccentColorStart = Color.FromArgb("#63510d"),
+                AccentColorEnd = Color.FromArgb("FF0000"),
+                Images= new ()
+                {
+                    "https://i.natgeofe.com/n/b103fff5-6a84-4d19-b65e-5856998816c3/PIA19952_2x3.jpg"
+                }
+ new()
+    {
+        Name = "Pluto",
+        Subtitle = "Pluto was once a planet of our solar system.",
+        HeroImage = "pluto.png",
+        Description = "Pluto was once our solar system's ninth planet, but has " +
+                   "been reclassified as a dwarf planet. It's located in the Kuiper Belt.",
+        AccentColorStart = Color.FromArgb("#63510d"),
+        AccentColorEnd = Color.FromArgb("FF0000"),
+        Images = new()
+        {
+            "https://i.natgeofe.com/n/b103fff5-6a84-4d19-b65e-5856998816c3/PIA19952_2x3.jpg"
+        }
+    }
+    };
+
+public static List<Planet> GetFeaturedPlanets()
+{
+    var random = new Random();
+    var randomizePlanets = planets
+        .OrderBy(item => random.Next());
+
+    return randomizePlanets
+        .Take(2)
+        .ToList();
+}
+
+public static List<Planet> GetAllPlanets()
+=> planets;
+    }
+    }
+            },
 
         public static List<Planet> GetFeaturedPlanets()
         {
