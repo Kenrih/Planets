@@ -11,8 +11,8 @@ namespace MauiPlanets
     public partial class App : Application
     {
         const int WindowWidth = 540;
-        const int WindowHeight = 1200;
-        //teha iseseisvalt vaate automaatne avanemine
+        const int WindowHeight = 900;
+        
 
         public App()
         {
